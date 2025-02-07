@@ -8,3 +8,22 @@
 #  0 < price of a product < 100000
 #  0 < number of products < 100 '''
 
+def calculateTotalPrice(prices: list[int], discount: int) -> int:
+    if not prices or discount < 0 or discount > 100:
+        return 0 # Edge case handling
+    
+    # Find most and least expensive item
+    most_expensive = max(prices)
+    least_expensive = min(prices)
+
+    # Calculate discount
+    discount_amount = (most_expensive + least_expensive) * (discount / 100)
+
+    # Calculate total price after discount
+    total_price = sum(prices) - discount_amount
+
+    return int(total_price)
+
+prices = [200, 150, 50, 400, 600]
+discount = 20
+print(calculateTotalPrice(prices, discount))
