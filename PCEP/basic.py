@@ -67,3 +67,5 @@ print(new_value)
 convert_float_to_int = 3.7
 new_value = round(convert_float_to_int)
 print(new_value)
+
+# Use bitwise AND (&) on 5 and 3.
