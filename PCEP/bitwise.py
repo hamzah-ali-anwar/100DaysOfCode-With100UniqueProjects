@@ -9,3 +9,9 @@
 
 result = 5 & 3
 print(result)
+
+print("_______")
+
+result_two = 5 & 75
+print(result_two)
+
