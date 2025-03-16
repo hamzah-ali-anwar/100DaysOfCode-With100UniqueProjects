@@ -1,6 +1,7 @@
 def test():
     try:
         print(value)
-    except("Error: variable is used before assignment")
+    except UnboundLocalError:
+        print("Error: variable is used before assignment")
 
 test()
