@@ -1,0 +1,1 @@
+# Given a list of words, capitalize every alternate word (even index positions) using enumerate().

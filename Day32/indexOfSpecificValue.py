@@ -1,0 +1,1 @@
+# Given a list of numbers, find and print the index of a specific number (e.g., 42) using enumerate().
